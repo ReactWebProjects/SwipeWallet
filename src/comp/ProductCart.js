@@ -1,5 +1,4 @@
 import React from 'react'
-import BuyButton from './BuyButton'
 
 function ProductCart({name, price, img}) {
 

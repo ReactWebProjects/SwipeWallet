@@ -6,14 +6,12 @@ import Card from './comp/Card';
 import Text from './comp/Text';
 import MainCard from './comp/MainCard';
 import ProductCart from './comp/ProductCart';
-import BuyButton from './comp/BuyButton';
 function App() {
   return (
     
     <div class="w-screen h-fit flex flex-col items-center">
       <Nav productname={"Swipe Wallet"}/>
       <Header product={"Swipe Wallet"} phrase={["Made for you", " Built to impress"]}/>
-      <BuyButton idNum={'7970174533932'}/>
       <ImgLineLong/>
       <ImgLineShort/>
       <Text/>
