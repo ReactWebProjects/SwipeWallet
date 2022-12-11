@@ -4,15 +4,75 @@
 
 /* @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300&family=M+PLUS+Rounded+1c:wght@500&family=Pathway+Gothic+One&family=Roboto+Mono:wght@700&display=swap');
  */
- @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300&family=M+PLUS+Rounded+1c:wght@500&family=Pathway+Gothic+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Prompt:wght@300&family=Taprom&display=swap');
 @layer base {
   html {
-    font-family: 'Alexandria', sans-serif;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-family: 'Pathway Gothic One', sans-serif;
+    font-family: 'Crimson Pro', serif;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Taprom', cursive;
   }
 
-}
+} */
 
 @layer components {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+  position: relative
+}
+.imgo {
+  height: 37.5rem;
+  width: 120rem;
+  /* margin-bottom: 20px;
+  background-color: #CDCDCD;
+  border: 2px solid #CDCDCD; */
+  background-image: url('/src//assets/titaniumridgewallet.webp');
+  rotate: 90deg;
+  background-repeat: no-repeat;
+  background-size: 50rem;
+}
+  .cardslg {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 96vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
+    grid-gap: 2vw;
+  }
+  .cardsmd {
+    display: flex;
+    flex-wrap: wrap;
+    max-width:95vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70vw, 1fr));
+    grid-gap: 3.3vw;
+  }
+  .cardssm {
+    display: flex;
+    flex-wrap: wrap;
+    max-width:95vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90vw, 1fr));
+    grid-gap: 3.3vw;
+  }
+  .clipimg1 {
+    clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+  }
+  .clipimg2 {
+    clip-path: polygon(50% 0%, 50% 100%, 0% 100%, 0% 0%);
+  }
+  .clipimg3 {
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
+  }
+
+  .productcol {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max(20vw, 250px), 1fr));
+    grid-gap: 5vw;
+  }
 }

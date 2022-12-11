@@ -1,81 +1,104 @@
+import Nav from './comp/Nav';
+import Header from './comp/Header';
+import ImgLineLong from './comp/ImgLineLong';
+import ImgLineShort from './comp/ImgLineShort';
+import Card from './comp/Card';
+import Text from './comp/Text';
+import MainCard from './comp/MainCard';
+import ProductCart from './comp/ProductCart';
+import BuyButton from './comp/BuyButton';
 function App() {
   return (
-    <div class="w-screen flex items-center flex-col">
-      <div class="fixed z-30 w-[95%] h-24 justify-between text-center flex-row flex ml-[3%] items-center mx-[2.5%]">
-        <span class="bg-clip-text text-transparent bg-gradient-to-br from-[#c0c0c0] via-[#470000] to-[#c0c0c0] text-6xl">
-        <span class="">BRANDNAME</span>
+    
+    <div class="w-screen h-fit flex flex-col items-center">
+      <Nav productname={"Swipe Wallet"}/>
+      <Header product={"Swipe Wallet"} phrase={["Made for you", " Built to impress"]}/>
+      <BuyButton idNum={'7970174533932'}/>
+      <ImgLineLong/>
+      <ImgLineShort/>
+      <Text/>
+      <div class="flex flex-col my-5 mb-[2vw]">
+      <span class="font-mon text-8xl max-sm:text-5xl max-sm font-bold text-center my-10">
+        Your Wallet, <br/> Smarter
         </span>
-        <div class="w-[20%] flex justify-evenly">
-          <span class="text-black font-[Pathway Gothic One] text-3xl">
-            Buy
-          </span>
-          <span class="text-black font-[Pathway Gothic One] text-3xl">
-            Contact
-          </span>
-          <span class="text-black font-[Pathway Gothic One] text-3xl material-icons-outlined">
-shopping_cart
-</span>
+        <div class="max-[815px]:hidden flex">
+        <MainCard img={require("../src/assets/ridgewallet2.png")} title={'Small Form Factor'} text={" The Swipe Wallet is made of premium metal or carbon fiber, with a small but rigid form factor that feels high-quality in your hands and will not scratch or break if dropped."}/>
         </div>
-        
+        <div class="max-[815px]:flex hidden">
+        <Card 
+          img={require("../src/assets/ridgewallet2.png")}
+          text={'The Swipe Wallet has adjustable straps that can accomodate any number of cards from one to twelve while remaining in its ideal small form factor, staying flush in your pocket without taking up the whole space.'} 
+          phrases={["Adjustable Strap"]}/>
+        </div>
       </div>
-      <div class="h-fit flex items-center justify-center">
-      <img  class="z-0 h-fit w-screen my-24" src={require("../src/assets/ridgepiecebg.webp")}></img>
-      <span class="flex absolute z-10  text-white text-[6vw] leading-[6vw] font-[Pathway Gothic One] text-center items-center flex-col justify-center" >
-            MADE FOR YOU <br/> BUILT TO IMPRESS
-      </span>
-      </div>
-       <div class="flex z-20 flex-col justify-start h-screen w-screen items-end" >
-        <img src={require("../src/assets/ridgewallet.webp") } class=" max-lg:top-[50%] lg:top-[80%] left-0 absolute rotate-[45deg] h-fit w-fit z-[-10]"></img>
-        <img src={require("../src/assets/goldridgewallet.webp") } class="max-lg:top-[70%] lg:top-[100%] left-0 absolute rotate-[20deg] w-[36rem] z-[-10]"></img>
-        <span class="text-black text-9xl font-[Pathway Gothic One] text-center w-screen ">
-        FLAWLESS DESIGN
-        </span>
-        <div class="flex max-lg:flex-col lg:flex-row w-screen lg:justify-end max-lg:items-center">
-        <span class="text-black max-lg:leading-[9vw] max-lg:text-[9vw] lg:text-[4vw] lg:leading-[4vw]  font-[Alexandria] text-center max-lg:mt-[10%] lg:mt-[25%] lg:ml-[10%]">
-        “Slim yet expandable,<br/>low profile, but<br/>fully featured.”
-        </span>
-        <span class="text-black max-lg:leading-[9vw] max-lg:text-[9vw] lg:text-[4vw] lg:leading-[4vw] font-[Alexandria] text-center max-lg:mt-[10%] lg:mt-[5%] ">
-        “Slim yet expandable,<br/>low profile, but<br/>fully featured.”
-        </span>
-        </div>
-        <div class="flex max-lg:flex-col lg:flex-row w-screen items-center ">
-        <img src={require("../src/assets/ridgebackground.webp") } class="w-screen my-10"></img>
-        <div class="absolute z-10 flex flex-col w-[50%] bg-transparent justify-center items-center">
-        <span class="text-7xl text-[Pathway Gothic One] text-white w-fit text-center my-5">
-          YOUR WALLET <br/> SMARTER
-        </span>  
-        <span class="text-3xl text-[Roboto Mono] text-black bg-white w-fit px-24 py-1 text-center">
-          SHOP NOW
-        </span>  
-        </div>
-       
-        
-{/*         
-        <div class="flex-col flex justify-center items-center">
-        <img src={require("../src/assets/blackridgewallet.webp") } class="bmax-lg:w-[90vw] lg:w-[30vw]"></img>
-        <span class="text-4xl bg-black text-white rounded-2xl px-5 py-1">
-        Buy Now
-        </span>
-        </div>
-        <div class="flex-col flex justify-center items-center">
-        <img src={require("../src/assets/goldridgewallet.webp") } class="bmax-lg:w-[90vw] lg:w-[30vw]"></img>
-        <span class="text-4xl bg-black text-white rounded-2xl px-5 py-1">
-        Buy Now
-        </span>
-        </div>
-        <div class="flex-col flex justify-center items-center">
-        <img src={require("../src/assets/pinkridgewallet.webp") } class="bmax-lg:w-[90vw] lg:w-[30vw]"></img>
-        <span class="text-4xl bg-black text-white rounded-2xl px-5 py-1">
-        Buy Now
-        </span>
-        </div> */}
-        </div>
+      <div class="max-sm:cardssm max-[815px]:cardsmd min-[815px]:cardslg">
+      <Card 
+           img={require("../src/assets/ridgewallet3.png")}
+          text={'The Swipe Wallet has adjustable straps that can accomodate any number of cards from one to twelve while remaining in its ideal small form factor, staying flush in your pocket without taking up the whole space.'} 
+          phrases={["Adjustable Strap"]}/>
+      <Card 
+          img={require("../src/assets/titaniumridgewallet.webp")} 
+          text={'The Swipe Wallet has a unique feature that prevents RFID attacks, keeping your cards\' magnetic information safe in your wallet and safe from any attacks that attempt to remotely steal your card information.'} 
+          phrases={["RFID Blocking:"]}/>
 
-             
+      <MainCard title={"Airtag Holder"} text={"On select models, Swipe Wallet offers an airtag holder to ensure that you will never lose your wallet again. These wallets come with different styling while maintaining all of the features that the standard Swipe Wallet comes with."} img={""}/>
       </div>
-      
+    <div class="mt-72 justify-center w-[70vw] flex flex-col">
+      <span class="font-lato text-5xl max-sm:text-3xl max-sm:font-semibold font-bold text-center">
+      Which Swipe Wallet is right for you?
+      </span>
+      <div class="productcol">
+        <ProductCart name={"Classic"} price={99.99} img={require("./assets/blackridgewallet.webp")}/>
+        <ProductCart name={"Titanium"} price={99.99} img={require("./assets/titaniumridgewallet.webp")}/>
+        <ProductCart name={"Carbon"} price={99.99} img={require("./assets/carbonridgewallet.webp")}/>
+        <ProductCart name={"Ember"} price={99.99} img={require("./assets/ashridgewallet.webp")}/>
+        <ProductCart name={"Gold"} price={99.99} img={require("./assets/goldridgewallet.webp")}/>
+        <ProductCart name={"Rainbow"} price={99.99} img={require("./assets/rainbowridgewallet.webp")}/>
+      </div>
     </div>
+  </div>
+
+    
   );
 }
 
 export default App;
+
+
+
+
+// options: {
+//   "product": {
+//     "contents": {
+//       "img": false,
+//       "title": false,
+//       "price": false,
+//       "options": false
+//     },
+//     "text": {
+//       "button": "Buy"
+//     },
+//     "variantId": "43660243730732"
+//   },
+//   "cart": {
+//     "styles": {
+//       "button": {
+//         "font-size": "13px",
+//         "padding-top": "14.5px",
+//         "padding-bottom": "14.5px",
+//         ":hover": {
+//           "background-color": "#3575dd"
+//         },
+//         "background-color": "#3b82f6",
+//         ":focus": {
+//           "background-color": "#3575dd"
+//         },
+//         "border-radius": "13px"
+//       }
+//     },
+//     "text": {
+//       "total": "Subtotal",
+//       "button": "Checkout"
+//     }
+//   },
+// },
