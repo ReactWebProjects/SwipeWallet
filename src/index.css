@@ -46,8 +46,8 @@ body {
     flex-wrap: wrap;
     max-width:95vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(70vw, 1fr));
-    grid-gap: 3.3vw;
+    grid-template-columns: repeat(auto-fill, minmax(80vw, 1fr));
+    grid-gap: 5vw;
   }
   .cardssm {
     display: flex;
@@ -55,7 +55,7 @@ body {
     max-width:95vw;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(90vw, 1fr));
-    grid-gap: 3.3vw;
+    grid-gap: 5vw;
   }
   .clipimg1 {
     clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
