@@ -2,14 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/SwipeLogo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Smaller, Smarter, Better"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/SwipeLogo.png" />
     <script src="http://sdks.shopifycdn.com/buy-button/2.2.1/buybutton.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet">
@@ -30,9 +31,26 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>The Swipe Wallet</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MJ8HGQ6DE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7MJ8HGQ6DE');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-652676213"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-652676213'); </script>
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-652676213/S3XtCI757YQYEPWYnLcC',
+      'transaction_id': ''
+  });
+</script>
+
   </head>
   <body>
+    
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
@@ -47,4 +65,5 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  
 </html>

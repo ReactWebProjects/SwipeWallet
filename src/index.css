@@ -19,6 +19,9 @@
     max-width: 100%;
     overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+ }
 body {
   position: relative
 }
@@ -36,10 +39,14 @@ body {
   .cardslg {
     display: flex;
     flex-wrap: wrap;
-    max-width: 96vw;
+    max-width: min(96vw, 90rem);
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
-    grid-gap: 2vw;
+    grid-template-columns: repeat(auto-fill, minmax(min(40vw, 44rem), 1fr));
+    grid-gap: min(2vw, 2rem);
+  }
+
+  .mgrid {
+    margin: min(2vw, 2rem) 0;
   }
   .cardsmd {
     display: flex;

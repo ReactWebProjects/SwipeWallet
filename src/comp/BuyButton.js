@@ -24,9 +24,9 @@ function BuyButton({idNum, varId, compNum}) {
             }
           },
           "button": {
-            "font-size": "13px",
-            "padding-top": "14.5px",
-            "padding-bottom": "14.5px",
+            "font-size": "16px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
             ":hover": {
               "background-color": "#3575dd"
             },
@@ -34,9 +34,9 @@ function BuyButton({idNum, varId, compNum}) {
             ":focus": {
               "background-color": "#3575dd"
             },
-            "border-radius": "13px",
-            "padding-left": "32px",
-            "padding-right": "32px"
+            "border-radius": "16px",
+            "padding-left": "16px",
+            "padding-right": "16px"
           },
           "quantityInput": {
             "font-size": "13px",
@@ -46,7 +46,7 @@ function BuyButton({idNum, varId, compNum}) {
         },
         "width": "280px",
         "text": {
-          "button": "Add to cart"
+          "button": "Buy"
         }
       },
       "productSet": {
@@ -95,7 +95,7 @@ function BuyButton({idNum, varId, compNum}) {
           }
         },
         "text": {
-          "button": "Add to cart"
+          "button": "Buy"
         }
       },
       "option": {},

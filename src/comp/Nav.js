@@ -8,12 +8,12 @@ export default function Nav({productname}) {
         {productname}
       </span>
       <div class="flex flex-row items-center">
-      <span class="material-icons-outlined text-3xl mx-1">
+      {/* <span class="material-icons-outlined text-3xl mx-1">
         expand_more
-      </span>
-      <span class="bg-blue-500 rounded-2xl py-1 px-3 text-white text-crimson text-sm mx-1">
+      </span> */}
+      <a href="#bottom" class="bg-blue-500 hover:bg-blue-600 rounded-2xl py-1 px-5 text-white text-crimson text-md mx-1">
         Buy
-      </span>
+      </a>
       </div>
     </div>
   </div>
