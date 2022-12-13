@@ -3,7 +3,7 @@ import React from 'react'
 function ImgLineLong() {
   return (
     <div class="flex flex-row w-screen my-10 h-[30vw] max-sm:hidden"> 
-    <div class="w-screen h-[22.5vw] bg-white z-10">
+    <div class="w-screen h-[22.5vw] bg-inherit z-10">
     </div>
     <img alt="bg" src={require("../assets/blackridgewallet.png") } class="z-20 absolute left-[-15vw] w-[30vw] rotate-[90deg]"></img>
     <img alt="bg" src={require("../assets/ridgewallet.webp") } class="z-0 absolute left-[-13vw] w-[26vw]"></img>

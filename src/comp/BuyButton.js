@@ -34,7 +34,7 @@ function BuyButton({idNum, varId, compNum}) {
             ":focus": {
               "background-color": "#3575dd"
             },
-            "border-radius": "16px",
+            "border-radius": "13px",
             "padding-left": "16px",
             "padding-right": "16px"
           },

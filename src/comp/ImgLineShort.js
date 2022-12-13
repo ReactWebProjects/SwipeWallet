@@ -4,7 +4,7 @@ function ImgLineShort() {
   return (
     
     <div class="max-sm:flex max-sm:flex-row hidden w-screen my-10 h-[45vw]"> 
-    <div class="w-screen h-[22.5vw] bg-white z-10">
+    <div class="w-screen h-[22.5vw] bg-inherit z-10">
       
     </div>
 

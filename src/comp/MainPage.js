@@ -10,13 +10,16 @@ import MainCardFit from './MainCardFit'
 function MainPage() {
   return (
     
-    <div class="w-screen h-fit flex flex-col items-center">
+    <div class="w-screen h-fit flex flex-col items-center bg-gradient-to-b from-[#020014] to-black">
+      <div class="w-screen h-screen absolute z-0 bg-gradient-to-b from-[#060620] via-[#120042] to-[#020014]">
+
+      </div>
       <Nav productname={"Swipe Wallet"}/>
       <Header product={"Swipe Wallet"} phrase={["Made for you", " Built to impress"]}/>
       <ImgLineLong/>
       <ImgLineShort/>
       <Text/>
-      <div class="flex flex-col my-5 max-[815px]:mb-[5vw] mb-[2vw] items-center">
+      <div class="flex flex-col my-5 max-[815px]:mb-[5vw] mb-[2vw] items-center text-white">
       <span class="font-mon text-8xl max-sm:text-5xl max-sm font-bold text-center my-10">
         Your Wallet, <br/> Smarter
       </span>
@@ -51,7 +54,7 @@ function MainPage() {
           phrases={["Airtag Holder"]}/>
       </div>
     <div class="mt-72 justify-center w-[70vw] flex flex-col">
-      <span class="font-lato text-5xl max-sm:text-3xl max-sm:font-semibold font-bold text-center">
+      <span class="font-lato text-5xl max-sm:text-3xl max-sm:font-semibold font-bold text-center text-white">
       Which Swipe Wallet is right for you?
       </span>
       <div id="bottom" class="productcol">
