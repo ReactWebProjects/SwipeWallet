@@ -5,10 +5,10 @@ function MainCard({title, text, img}) {
     
     <div class="rounded-3xl  bg-[#5e5d5d]/[0.15] w-[96vw] max-w-[90rem] relative flex flex-row items-start justify-between max-h-[30rem] overflow-hidden h-fit min-h-[30rem] max-lg:min-h-[20rem]">
     <div class=" flex flex-col w-[50vw] px-[4rem] pt-[4rem] max-w-[40rem]">
-    <span class="text-white font-rounded font-medium text-[2rem] max-[815px]:text[1.5rem] max-[815px]:leading-[1.7rem]  max-lg:text-[1.8rem] max-lg:leading-[2rem] leading-[2.2rem]">
+    <span class="text-white font-nun font-medium text-[2rem] max-[815px]:text[1.5rem] max-[815px]:leading-[1.7rem]  max-lg:text-[1.8rem] max-lg:leading-[2rem] leading-[2.2rem]">
      {title}
     </span>
-    <span class="font-mon font-semibold text-gray-400 mt-2 text-[1.25rem] max-[815px]:text-[1.25rem] max-[815px]:leading-[1.6rem]  max-lg:text-[1.25rem] max-lg:leading-[1.7rem] leading-[1.9rem]  mb-10">
+    <span class="font-nun font-semibold text-gray-400 mt-2 text-[1.25rem] max-[815px]:text-[1.25rem] max-[815px]:leading-[1.6rem]  max-lg:text-[1.25rem] max-lg:leading-[1.7rem] leading-[1.9rem]  mb-10">
     {text}
     </span>
     </div>

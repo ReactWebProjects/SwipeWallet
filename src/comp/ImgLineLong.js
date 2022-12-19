@@ -2,8 +2,15 @@ import React from 'react'
 
 function ImgLineLong() {
   return (
-    <div class="flex flex-row w-screen my-10 h-[30vw] max-sm:hidden"> 
-    <div class="w-screen h-[22.5vw] bg-inherit z-10">
+    <div class="flex flex-row w-screen my-10 h-[30vw] max-md:hidden"> 
+    {/* <div class="w-screen h-[22.5vw] bg-inherit z-10">
+    </div>
+    <img alt="bg" src={require("../assets/r-removebg-preview.png") } class="z-20 absolute left-[-22.5vw] w-[30vw] clipimg2 rotate-180"></img>
+    <img alt="bg" src={require("../assets/bluew-removebg-preview.png") } class="z-20 absolute left-[2.25vw]  w-[30vw] clipimg2 rotate-180"></img>
+    <img alt="bg" src={require("../assets/silverw-removebg-preview.png") } class="z-20 absolute left-[27.5vw] w-[30vw] clipimg2 rotate-180"></img>
+    <img alt="bg" src={require("../assets/greenw-removebg-preview.png") } class="z-20 absolute left-[52.5vw] w-[30vw] clipimg2 rotate-180"></img>
+    <img alt="bg" src={require("../assets/blackw-removebg-preview.png") } class="clipimg2 rotate-180 z-20 absolute left-[77.5vw] w-[30vw] overflow-hidden"></img> */}
+        <div class="w-screen h-[22.5vw] bg-inherit z-10">
     </div>
     <img alt="bg" src={require("../assets/blackridgewallet.png") } class="z-20 absolute left-[-15vw] w-[30vw] rotate-[90deg]"></img>
     <img alt="bg" src={require("../assets/ridgewallet.webp") } class="z-0 absolute left-[-13vw] w-[26vw]"></img>

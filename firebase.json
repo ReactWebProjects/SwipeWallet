@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "swipewallet",
     "public": "build",
     "ignore": [
       "firebase.json",

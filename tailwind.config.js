@@ -9,6 +9,7 @@ module.exports = {
         'rounded': ['Varela Round', 'sans-serif'],
         'lato': ['Lato', 'sans-serif'],
         'mon': ['Montserrat', 'sans-serif'],
+        'nun': ['Nunito','sans-serif'],
     },
     extend: {
       backgroundImage: {
