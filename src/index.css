@@ -240,4 +240,45 @@ display: var(--openBlock);
     grid-template-columns: repeat(auto-fill, minmax(max(20vw, 250px), 1fr));
     grid-gap: 5vw;
   }
+
+  .whycol {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: min(96vw, 90rem);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(40vw, 44rem), 1fr));
+    grid-gap: min(2vw, 2rem);
+  }
+
+  .scrollimg {
+    @apply bg-fixed relative bg-cover
+  }
+  .square {
+    width: min(96vw, 90rem);
+    height: 20vw;
+    background: white;
+    border-color: black;
+    border-width: 1px;
+  }
+  @keyframes wipe-enter {
+    0% {
+      transform: scale(0, .025);
+    }
+    10% {
+      transform: scale(1, .025);
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .square-animation {
+      animation: wipe-enter 1s 1;
+    }
+  }
+  .qlg {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: min(96vw, 90rem);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(40vw, 44rem), 1fr));
+    grid-gap: min(6vw, 6rem);
+  }
 }

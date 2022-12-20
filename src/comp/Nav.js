@@ -29,8 +29,8 @@ export default function Nav({productname}) {
   return (
     <div class="navHeight w-screen flex flex-col top-0 left-0 outline outline-1 outline-white fixed backdrop-blur-md z-30">
     <div class="h-12 w-screen backdrop-blur-md flex flex-row items-center justify-center">
-    <div class="mx-[2.5%] w-[90%] max-w-[90rem] flex-row justify-between flex items-center">
-      <span class="font-nun text-2xl text-white lg:flex hidden">
+    <div class="mx-[2.5%] w-[80%] max-w-[90rem] flex-row justify-between flex items-center">
+      <span class="font-nun text-2xl text-black lg:flex hidden">
         {productname}
       </span>
       <img src={require("../assets/SwipeS.png")} class="max-lg:flex hidden w-12 h-12"></img>
@@ -42,7 +42,7 @@ export default function Nav({productname}) {
                 Overview
             </NavLink>
       </span> 
-      <span class="font-nun text-md mr-10 md:flex max-md:hidden text-white">
+      <span class="font-nun text-md mr-10 md:flex max-md:hidden text-black">
       <NavLink to="/about" activeStyle>
               Why Swipe Wallet
           </NavLink>
@@ -50,7 +50,7 @@ export default function Nav({productname}) {
     </div>
       : 
       <div class="flex flex-row">
-      <span class=" font-nun text-md mr-10 md:flex max-md:hidden text-white">
+      <span class=" font-nun text-md mr-10 md:flex max-md:hidden text-black">
       <NavLink to="/home" activeStyle>
                 Overview
             </NavLink>
@@ -63,7 +63,7 @@ export default function Nav({productname}) {
   </div>}
       <div class="max-md:flex md:hidden max-md:flex-col items-center w-fit">
         <li class="dropdown dropdown-4 text-black">
-          <span class="material-icons-outlined text-white text-3xl mx-1" onClick={()=>{setOpen(!open)}}>
+          <span class="material-icons-outlined text-black text-3xl mx-1" onClick={()=>{setOpen(!open)}}>
             {open ? "keyboard_arrow_up" : "expand_more" }
           </span>
           <ul class="dropdown_menu dropdown_menu-4 h-24 z-30 flex flex-col w-screen pl-[7.5vw] justify-evenly">
@@ -71,14 +71,14 @@ export default function Nav({productname}) {
             <li class="dropdown_item-1 w-screen font-nun text-md h-max items-center flex flex-row justify-center text-gray-400 font-black"><NavLink to="/home" activeStyle>
                 Overview
             </NavLink></li> : 
-            <li class="dropdown_item-1 text-white w-screen font-nun text-md h-max items-center flex flex-row justify-center"><NavLink to="/home" activeStyle>
+            <li class="dropdown_item-1 text-black w-screen font-nun text-md h-max items-center flex flex-row justify-center"><NavLink to="/home" activeStyle>
                 Overview
             </NavLink></li>}
           {location != "/about" ? 
             <li class="dropdown_item-1 w-screen font-nun text-md h-max items-center flex flex-row justify-center text-gray-400 font-black"><NavLink to="/about" activeStyle>
                 Why Swipe Wallet
             </NavLink></li> : 
-            <li class="dropdown_item-1 text-white w-screen font-nun text-md h-max items-center flex flex-row justify-center"><NavLink to="/about" activeStyle>
+            <li class="dropdown_item-1 text-black w-screen font-nun text-md h-max items-center flex flex-row justify-center"><NavLink to="/about" activeStyle>
                 Why Swipe Wallet
             </NavLink></li>}
             <div class="navLine w-screen fixed border-b-[1px] border-white">
