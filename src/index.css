@@ -186,7 +186,7 @@ display: var(--openBlock);
   /* margin-bottom: 20px;
   background-color: #CDCDCD;
   border: 2px solid #CDCDCD; */
-  background-image: url('/src//assets/titaniumridgewallet.webp');
+  /* background-image: url('/src//assets/titaniumridgewallet.webp'); */
   rotate: 90deg;
   background-repeat: no-repeat;
   background-size: 50rem;
@@ -228,7 +228,10 @@ display: var(--openBlock);
   .clipimg3 {
     clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
   }
-
+  .crop {
+    /* clip-path: polygon(0% 50%, 100% 50%, 0% 100%, 100% 100%); */
+    clip-path: polygon(0% 40%, 100% 40%, 100% 100%, 0% 100%);
+  }
   .productcol {
     display: flex;
     flex-wrap: wrap;

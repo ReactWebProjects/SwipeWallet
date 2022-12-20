@@ -10,10 +10,11 @@ module.exports = {
         'lato': ['Lato', 'sans-serif'],
         'mon': ['Montserrat', 'sans-serif'],
         'nun': ['Nunito','sans-serif'],
+        'rob': ['Roboto Slab', 'serif']
     },
     extend: {
       backgroundImage: {
-      'ridge': "url('/src/assets/ridgebackground.webp')",
+      'sale': "url('/src/assets/sale.jpg')",
     }
   },
   },
